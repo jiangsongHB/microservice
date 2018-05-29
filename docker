@@ -1,0 +1,7 @@
+# 创建tomcat容器
+docker run -d -p 18080:8080 -v /root/web/microservice-proj:/opt/tomcat/microservice-proj --privileged=true --name microservice-user-1 mytomcat:1.0 /root/run.sh
+docker run -d -p 28080:8080 -v /root/web/microservice-proj:/opt/tomcat/microservice-proj --privileged=true --name microservice-product-1 mytomcat:1.0 /root/run.sh
+docker run -d -p 38080:8080 -v /root/web/microservice-proj:/opt/tomcat/microservice-proj --privileged=true --name microservice-order-1 mytomcat:1.0 /root/run.sh
+docker run -d -p 48080:8080 -v /root/web/microservice-proj:/opt/tomcat/microservice-proj --privileged=true --name microservice-analysis-1 mytomcat:1.0 /root/run.sh
+docker run -d -p 18081:8080 -v /root/web/microservice-proj:/opt/tomcat/microservice-proj --privileged=true --name microservice-controller-1 mytomcat:1.0 /root/run.sh
+docker run -d -p 18082:8080 -v /root/web/microservice-proj:/opt/tomcat/microservice-proj --privileged=true --name microservice-redis-1 mytomcat:1.0 /root/run.sh

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: microservice-controller
+
+server:
+  port: 1114
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/  # ·þÎñ×¢²áµØÖ·

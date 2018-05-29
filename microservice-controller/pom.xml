@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.demo</groupId>
+	<artifactId>microservice-controller</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>microservice-controller</name>
+	<description>Demo project for Spring Boot</description>
+
+	<!--<parent>-->
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-starter-parent</artifactId>-->
+		<!--<version>2.0.2.RELEASE</version>-->
+		<!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+	<!--</parent>-->
+
+	<parent>
+		<groupId>com.demo</groupId>
+		<artifactId>microservice</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!--Spring Cloud对Feign的支持由org.springframework.cloud:spring-cloud-netflix-core
+移到org.springframework.cloud:spring-cloud-openfeign-core下,
+而Finchley.M8版本下的spring-cloud-starter-openfeign:2.0.0.M2的pom依赖文件中导入的是
+spring-cloud-netflix-core而非spring-cloud-openfeign-core,
+需要我们在pom文件中添加对应依赖管理使spring-cloud-starter-openfeign版本
+更新到2.0.0.RC1-->
+	<!--<dependencyManagement>-->
+		<!--<dependencies>-->
+			<!--<dependency>-->
+				<!--<groupId>org.springframework.cloud</groupId>-->
+				<!--<artifactId>spring-cloud-openfeign</artifactId>-->
+				<!--<version>2.0.0.RC1</version>-->
+				<!--<type>pom</type>-->
+				<!--<scope>import</scope>-->
+			<!--</dependency>-->
+		<!--</dependencies>-->
+	<!--</dependencyManagement>-->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>2.0.0.RC1</version>
+		</dependency>
+	</dependencies>
+	<!--<repositories>-->
+		<!--<repository>-->
+			<!--<id>spring-milestones</id>-->
+			<!--<name>Spring Milestones</name>-->
+			<!--<url>https://repo.spring.io/libs-milestone</url>-->
+			<!--<snapshots>-->
+				<!--<enabled>false</enabled>-->
+			<!--</snapshots>-->
+		<!--</repository>-->
+	<!--</repositories>-->
+	<!--<dependencies>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-web</artifactId>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-test</artifactId>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+	<!--</dependencies>-->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

@@ -1,0 +1,6 @@
+spring:
+
+# 配置版本
+  profiles:
+    active: user1   # application-{user*}.yml
+

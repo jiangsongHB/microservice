@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice.iml" filepath="$PROJECT_DIR$/microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-analysis/microservice-analysis.iml" filepath="$PROJECT_DIR$/microservice-analysis/microservice-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/microservice-common.iml" filepath="$PROJECT_DIR$/microservice-common/microservice-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-controller/microservice-controller.iml" filepath="$PROJECT_DIR$/microservice-controller/microservice-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-order/microservice-order.iml" filepath="$PROJECT_DIR$/microservice-order/microservice-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-product/microservice-product.iml" filepath="$PROJECT_DIR$/microservice-product/microservice-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-redis/microservice-redis.iml" filepath="$PROJECT_DIR$/microservice-redis/microservice-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-user/microservice-user.iml" filepath="$PROJECT_DIR$/microservice-user/microservice-user.iml" />
+    </modules>
+  </component>
+</project>

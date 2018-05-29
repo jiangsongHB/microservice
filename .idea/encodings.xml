@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-analysis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-user" charset="UTF-8" />
+  </component>
+</project>
