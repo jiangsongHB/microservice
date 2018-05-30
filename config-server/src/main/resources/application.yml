@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lieyanhaipo/microservice/   #配置的git仓库地址
+          search-paths: config-repo   # git仓库地址下的相对路径，可配置多个，用","分隔开
+          username:   # git仓库账号
+          password:  # git仓库密码
+server:
+  port: 1115
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
