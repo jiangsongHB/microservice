@@ -20,7 +20,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="config-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
-      <module name="microservice" target="1.8" />
+      <module name="microservice" target="1.6" />
       <module name="microservice-analysis" target="1.8" />
       <module name="microservice-common" target="1.8" />
       <module name="microservice-controller" target="1.8" />

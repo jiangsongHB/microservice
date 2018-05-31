@@ -1,15 +1,15 @@
 spring:
   application:
-    name: eureka-server  #eureka server×¢²áµÄname£¬Î¨Ò»±êÊ¶
+    name: eureka-server  #eureka server×¢ï¿½ï¿½ï¿½nameï¿½ï¿½Î¨Ò»ï¿½ï¿½Ê¶
 
 server:
-  port: 1111  #eureka server·þÎñµÄ¶Ë¿ÚºÅ
+  port: 2111  #eureka serverï¿½ï¿½ï¿½ï¿½Ä¶Ë¿Úºï¿½
 
 eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: false  # Eureka·þÎñ×¢²áÖÐÐÄÒ²»á½«×Ô¼º×÷Îª¿Í»§¶ËÀ´³¢ÊÔ×¢²áËü×Ô¼º£¬ÐèÒª½ûÓÃ
+    registerWithEureka: false  # Eurekaï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½á½«ï¿½Ô¼ï¿½ï¿½ï¿½Îªï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

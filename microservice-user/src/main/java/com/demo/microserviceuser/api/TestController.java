@@ -28,6 +28,6 @@ public class TestController {
 
     @RequestMapping(value="/hello",method= RequestMethod.GET)
     public String hello(){
-        return testService.getMsg();
+        return testService.getMsg()+foo;
     }
 }
