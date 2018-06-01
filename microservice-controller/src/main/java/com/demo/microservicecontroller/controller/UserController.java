@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public String test(){
-        return userService.hello();
+        return userService.hello("libing");
     }
 
 }

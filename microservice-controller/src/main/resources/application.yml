@@ -5,7 +5,14 @@ spring:
 server:
   port: 1114
 
+# Feign是自带断路器的，在D版本的Spring Cloud中，它没有默认打开
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:2111/eureka/  # ����ע���ַ
+      defaultZone: http://localhost:2111/eureka/
+
+
