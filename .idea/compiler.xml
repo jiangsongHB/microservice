@@ -15,6 +15,7 @@
         <module name="microservice-product" />
         <module name="microservice-redis" />
         <module name="microservice-user" />
+        <module name="zuul-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -28,6 +29,7 @@
       <module name="microservice-product" target="1.8" />
       <module name="microservice-redis" target="1.8" />
       <module name="microservice-user" target="1.8" />
+      <module name="zuul-client" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -9,6 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/microservice-product" />
     <file type="web" url="file://$PROJECT_DIR$/microservice-redis" />
     <file type="web" url="file://$PROJECT_DIR$/microservice-user" />
+    <file type="web" url="file://$PROJECT_DIR$/zuul-client" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -23,6 +24,7 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-controller/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-client/pom.xml" />
       </list>
     </option>
   </component>

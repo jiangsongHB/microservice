@@ -11,6 +11,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @EnableEurekaClient
 @SpringBootApplication
+//@EnableFeignClients  //开启foeign
+//@EnableHystrix       //开启断路器
+//@EnableHystrixDashboard  //开启HystrixDashboard监控器
 public class MicroserviceUserApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MicroserviceUserApplication.class, args);

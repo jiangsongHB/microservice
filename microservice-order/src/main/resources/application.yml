@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: microservice-order
+server:
+  port: 1116
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2111/eureka/  # 服务注册
+# Feign是自带断路器的，在D版本的Spring Cloud中，它没有默认打开
+#feign:
+#  hystrix:
+#    enabled: true
+

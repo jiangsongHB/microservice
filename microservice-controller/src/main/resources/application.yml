@@ -15,4 +15,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:2111/eureka/
 
-
+zuul:
+  routes:
+    api-user:
+      path: /api-user/**
+      serviceId: microservice-user
+    api-order:
+      path: /api-order/**
+      serviceId: microservice-order

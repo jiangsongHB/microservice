@@ -28,6 +28,7 @@
         <module>microservice-controller</module>
         <module>eureka-server</module>  <!-- springCloudEureka 注册中心 -->
         <module>config-server</module>  <!-- springCloudConfig 配置中心 -->
+        <module>zuul-client</module> <!-- zuul网关 -->
     </modules>
 
     <dependencies>
