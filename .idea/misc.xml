@@ -9,7 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/microservice-product" />
     <file type="web" url="file://$PROJECT_DIR$/microservice-redis" />
     <file type="web" url="file://$PROJECT_DIR$/microservice-user" />
-    <file type="web" url="file://$PROJECT_DIR$/zuul-client" />
+    <file type="web" url="file://$PROJECT_DIR$/zuul-server" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -25,7 +25,13 @@
         <option value="$PROJECT_DIR$/microservice-controller/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-client/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

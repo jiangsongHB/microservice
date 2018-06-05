@@ -12,7 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/microservice-product/microservice-product.iml" filepath="$PROJECT_DIR$/microservice-product/microservice-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-redis/microservice-redis.iml" filepath="$PROJECT_DIR$/microservice-redis/microservice-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-user/microservice-user.iml" filepath="$PROJECT_DIR$/microservice-user/microservice-user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zuul-client/zuul-client.iml" filepath="$PROJECT_DIR$/zuul-client/zuul-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
     </modules>
   </component>
 </project>
