@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author libing
- * @desc feign client
+ * @desc feign client通过注册发现，调用服务提供者microservice-user
  * @date 2018/5/28 13:39
  */
 @FeignClient(value = "microservice-user",fallback = UserServiceHystric.class)  //服务提供者的名字

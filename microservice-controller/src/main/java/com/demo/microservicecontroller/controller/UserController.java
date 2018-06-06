@@ -16,7 +16,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    @RequestMapping(value = "user/test",method = RequestMethod.GET)
     public String test(){
         return userService.hello("libing");
     }

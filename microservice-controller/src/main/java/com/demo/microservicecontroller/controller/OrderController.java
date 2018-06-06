@@ -16,7 +16,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    @RequestMapping(value = "order/test",method = RequestMethod.GET)
     public String test(){
         return orderService.hello("libing");
     }

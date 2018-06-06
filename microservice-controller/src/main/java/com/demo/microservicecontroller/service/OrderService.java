@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author libing
- * @desc
+ * @desc  feign client通过注册发现，调用zuul网关，间接调用服务提供者通过microservice-order
  * @date 2018/6/3 0:15
  */
-@FeignClient("microservice-order")
+@FeignClient("zuul-server")
 public interface OrderService {
-    @RequestMapping(value = "/hello",method = RequestMethod.GET)
+    @RequestMapping(value = "/api-order/hello",method = RequestMethod.GET)
     String hello(@RequestParam(value="name")String name);
 }
