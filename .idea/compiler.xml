@@ -11,10 +11,12 @@
         <module name="microservice-analysis" />
         <module name="microservice-common" />
         <module name="microservice-controller" />
+        <module name="microservice-mq" />
         <module name="microservice-order" />
         <module name="microservice-product" />
         <module name="microservice-redis" />
         <module name="microservice-user" />
+        <module name="zipkin-server" />
         <module name="zuul-client" />
         <module name="zuul-server" />
       </profile>
@@ -26,10 +28,12 @@
       <module name="microservice-analysis" target="1.8" />
       <module name="microservice-common" target="1.8" />
       <module name="microservice-controller" target="1.8" />
+      <module name="microservice-mq" target="1.8" />
       <module name="microservice-order" target="1.8" />
       <module name="microservice-product" target="1.8" />
       <module name="microservice-redis" target="1.8" />
       <module name="microservice-user" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
       <module name="zuul-client" target="1.8" />
       <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>

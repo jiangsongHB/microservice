@@ -10,14 +10,15 @@ server:
   port: 1117
 
 zuul:
+  prefix: /proxy     # url同一前缀
+  ignored-services: "*" #表示所有的 Eureka 中的服务名称的信息访问都要忽略掉，所有的访问都需要配置一个映射路径的模式来完成
   routes:
     api-user:
       path: /api-user/**
       serviceId: microservice-user
-    api-order:
+    api-order:     # http://localhost:1117/api-order/hello
       path: /api-order/**
       serviceId: microservice-order
-
 
 
 

@@ -1,17 +1,17 @@
 package com.demo.microserviceuser.api;
 
 import com.demo.microserviceuser.service.TestService;
-import com.netflix.discovery.DiscoveryClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.serviceregistry.Registration;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
 
 /**
  * @author libing
@@ -19,6 +19,7 @@ import java.util.List;
  * @date 2018/5/20 15:04
  */
 @RestController
+@RefreshScope
 public class TestController {
     @Autowired
     private TestService testService;

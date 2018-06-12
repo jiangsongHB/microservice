@@ -29,6 +29,7 @@
         <module>eureka-server</module>  <!-- springCloudEureka 注册中心 -->
         <module>config-server</module>  <!-- springCloudConfig 配置中心 -->
         <module>zuul-server</module> <!-- zuul网关服务 -->
+        <module>zipkin-server</module> <!-- 服务追踪 -->
     </modules>
 
     <dependencies>

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: zipkin-server
+server:
+  port: 1120
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2111/eureka/  # 服务注册
+  instance:
+      instanceId: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
