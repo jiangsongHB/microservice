@@ -4,6 +4,7 @@ import com.demo.microserviceuser.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
 import java.beans.Transient;
@@ -14,12 +15,16 @@ import java.beans.Transient;
  * @date 2018/5/20 14:04
  */
 @Service("testService")
+@RefreshScope
 public class TestServiceImpl implements TestService {
     @Autowired
     private DiscoveryClient discoveryClient;
 
     @Value("${server.port}")
     private String port;
+
+//    @Value("${test}")
+//    private String test;
 
     public String getMsg(){
         String services = "Services: " + discoveryClient.getServices()+" port :"+port;

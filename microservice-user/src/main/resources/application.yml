@@ -1,6 +1,2 @@
-spring:
-
-# 配置版本
-  profiles:
-    active: user1   # application-{user*}.yml
-
+server:
+  port: 1112
